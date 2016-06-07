@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Oklahoma Legislature 2016 - Oklahoma Watch - oklahomawatch.org</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="http://oklahomawatchdata.org" target="_blank">
+            <img src="img/logo.png" style="display: inline; width: 40px; margin-right: 15px;" /> Oklahoma Watch
+          </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right hidden-xs">
+            <li><a id="tw"><i class="fa fa-twitter"></i></a></li>
+            <li><a id="fb"><i class="fa fa-facebook"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container" style="margin-top:20px; margin-bottom:20px;">
+        <div id="main">
+        <div class="row">
+            <div class="col-md-12">
+              <h1 style="font-weight:bold; margin-bottom:0;">2016 Oklahoma Legislature</h1>
+
+              <p class="lead">Use this interactive to review key votes and demographic data for members of the 2016 Oklahoma Legislature. Click or tap on each circle to see details about a legislator, including how to contact him or her. To find lawmakers who represent your district, <a href="http://www.oklegislature.gov/findmylegislature.aspx" target="_blank">click here</a>.</p>
+              
+              <div id="group_labels" class="lead noselect">
+                <div class="label_wrapper">
+                    <span class="label label-primary" id="chamber">By chamber</span>
+                </div>
+                <div class="label_wrapper">
+                    <span class="label label-leg" id="party">By party</span>
+                </div>
+                <div class="label_wrapper">
+                    <span class="label label-leg" id="race">By race</span>
+                </div>
+                <div class="label_wrapper">
+                    <span class="label label-leg" id="sex">By sex</span>
+                </div>
+                <div class="label_wrapper">
+                    <span class="label label-leg" id="age">By age</span>
+                </div>
+                <div class="label_wrapper">
+                    <span class="label label-leg" id="marital">By marital status</span>
+                </div>
+                <div class="label_wrapper">
+                    <span class="label label-leg" id="education">By educational level</span>
+                </div>
+                <div class="label_wrapper">
+                    <span class="label label-leg" id="vote">By vote</span>
+                </div>
+            </div>
+            <input id="enter" class="form-control input-lg" placeholder="Start typing to find a lawmaker ..." style="margin-bottom:20px;" />
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col-md-12">
+                <h3 id="box_hed"></h3>
+                <div id="sel_div"></div>
+                <h5 id="bill_hed"></h5>
+                <p id="bill_desc"></p>
+                <div id="box_div"></div>
+            </div>
+            </div>
+            </div>
+        </div>
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
