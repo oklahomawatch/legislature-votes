@@ -265,7 +265,7 @@ $.getJSON(dataUrl).success(function(d) {
         highlighter(this.value.toUpperCase());
     });
 
-    var twit = encodeURI("https://twitter.com/intent/tweet?text=Explore the makeup of the 2016 Oklahoma Legislature with this @OklahomaWatch interactive: " + window.location);
+    var twit = encodeURI("https://twitter.com/intent/tweet?text=Explore key votes and demographic data for the 2016 Oklahoma Legislature with this @OklahomaWatch interactive: " + window.location);
 
     var facebook = encodeURI("http://www.facebook.com/sharer.php?u=" + window.location);
     
