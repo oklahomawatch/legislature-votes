@@ -189,7 +189,25 @@ $.getJSON(dataUrl).success(function(d) {
                                     return _.has(q, bill_id);
                                 });
      
-                        grouped = _.groupBy(eligible, bill_id);
+                        var first_group = _.groupBy(eligible, bill_id);
+                        
+                        grouped = {};
+                        
+                        if (first_group.yes) {
+                            grouped.yes = first_group.yes;
+                        }
+
+                        if (first_group.no) {
+                            grouped.no = first_group.no;
+                        }
+
+                        if (first_group.excused) {
+                            grouped.excused = first_group.excused;
+                        }
+
+                        if (first_group['conostitutionoal privilege']) {
+                            grouped['conostitutionoal privilege'] = first_group['conostitutionoal privilege'];
+                        }
 
                         template_data.attr = "vote";
                         template_data.data = grouped;
